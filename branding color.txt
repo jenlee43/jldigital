@@ -1,0 +1,20 @@
+#6A4CFF (royal violet)
+Primary (logo, headings, key icons, links
+
+#F4F1FF (mist lavander)
+Secondary (section backgrounds, cards, panels, soft shapes
+
+#3dbeb3 (Emerald Mint)
+Growth Accent (CTA buttons, growth indicators, links on dark background, hover states, icons, analytics
+
+
+#2B1E4A (Midnight Plum)
+(Dark text on light background, footer background, logo, titles on lavander background, navigation text
+
+
+#2B1E4A  (Cool Gray)
+(body Texts, secondary texts, labels, descriptions, captions
+
+#FFFFF (white)
+Background
+

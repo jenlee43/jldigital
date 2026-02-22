@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — JL Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zet4voj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="logo.png" alt="JL Digital" /></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Work</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="portfolio-hero">
+            <div class="portfolio-hero-inner">
+                <p class="portfolio-eyebrow">Selected Work</p>
+                <h1 class="portfolio-headline">Designs that move people.<br>Strategies that move businesses.</h1>
+                <p class="portfolio-sub">A curated look at what happens when creativity meets purpose.</p>
+            </div>
+        </section>
+
+        <!-- Tabs + Grid -->
+        <section class="portfolio-body">
+            <div class="portfolio-body-inner">
+                <div class="portfolio-layout">
+                    <nav class="portfolio-tabs" role="tablist">
+                        <button class="ptab ptab--active" role="tab" data-filter="web-design">Web Design</button>
+                        <button class="ptab ptab--soon" role="tab" data-filter="digital-printing">Digital Printing <span class="ptab-soon">Soon</span></button>
+                        <button class="ptab ptab--soon" role="tab" data-filter="logo-design">Logo Design <span class="ptab-soon">Soon</span></button>
+                        <button class="ptab ptab--soon" role="tab" data-filter="mobile-design">Mobile Design <span class="ptab-soon">Soon</span></button>
+                        <button class="ptab ptab--soon" role="tab" data-filter="digital-marketing">Digital Marketing <span class="ptab-soon">Soon</span></button>
+                        <button class="ptab ptab--soon" role="tab" data-filter="personal">Personal <span class="ptab-soon">Soon</span></button>
+                    </nav>
+
+                <div class="portfolio-grid" id="portfolioGrid">
+                    <!-- Web Design -->
+                    <article class="pgrid-card" data-category="web-design">
+                        <img src="images/portfolio/homelearningideas.png" alt="Texas Foods" class="pgrid-img" />
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Web Design</span>
+                            <h3 class="pgrid-title">Home Learning Ideas</h3>
+                            <p class="pgrid-desc">Web design and strategy for a client in the local food space.</p>
+                        </div>
+                    </article>
+                    <article class="pgrid-card" data-category="web-design">
+                        <img src="images/portfolio/ricebowl.png" alt="Access" class="pgrid-img" />
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Web Design</span>
+                            <h3 class="pgrid-title">Rice Bowl</h3>
+                            <p class="pgrid-desc">SEO and content refresh that lifted organic traffic.</p>
+                        </div>
+                    </article>
+                    <article class="pgrid-card" data-category="web-design">
+                        <img src="images/portfolio/feastlight.png" alt="Kangen Water" class="pgrid-img" />
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Web Design</span>
+                            <h3 class="pgrid-title">Feast Light PG</h3>
+                            <p class="pgrid-desc">Brand and eCommerce build from concept to launch.</p>
+                        </div>
+                    </article>
+
+                    <!-- Logo Design -->
+                    <article class="pgrid-card" data-category="logo-design">
+                        <img src="images/portfolio/chessclub.png" alt="Kangen Water" class="pgrid-img" />
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Web Design</span>
+                            <h3 class="pgrid-title">Prince George Chess Club</h3>
+                            <p class="pgrid-desc">Logo and visual identity system for a local business.</p>
+                        </div>
+                    </article>
+
+                    <!-- Mobile Design -->
+                    <article class="pgrid-card" data-category="mobile-design">
+                        <div class="pgrid-img pgrid-img--placeholder"></div>
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Mobile Design</span>
+                            <h3 class="pgrid-title">App UI</h3>
+                            <p class="pgrid-desc">Mobile-first UI design for a service-based app.</p>
+                        </div>
+                    </article>
+
+                    <!-- Digital Marketing -->
+                    <article class="pgrid-card" data-category="digital-marketing">
+                        <div class="pgrid-img pgrid-img--placeholder"></div>
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Digital Marketing</span>
+                            <h3 class="pgrid-title">SEO Campaign</h3>
+                            <p class="pgrid-desc">Organic growth strategy that doubled search visibility.</p>
+                        </div>
+                    </article>
+
+                    <!-- Personal -->
+                    <article class="pgrid-card" data-category="personal">
+                        <div class="pgrid-img pgrid-img--placeholder"></div>
+                        <div class="pgrid-info">
+                            <span class="pgrid-tag">Personal</span>
+                            <h3 class="pgrid-title">JL Digital Brand</h3>
+                            <p class="pgrid-desc">Designing my own corner of the internet — this one.</p>
+                        </div>
+                    </article>
+                </div>
+                </div><!-- /.portfolio-layout -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-logo"><img src="logo.png" alt="JL Digital" class="footer-logo-img" /></p>
+            <p class="footer-tagline">Joyful Designs. Lasting Results.</p>
+            <p class="footer-copy">&copy; <span id="year"></span> Jenniffer Lee. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.ptab');
+        const cards = document.querySelectorAll('.pgrid-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                if (tab.classList.contains('ptab--soon')) return;
+                tabs.forEach(t => t.classList.remove('ptab--active'));
+                tab.classList.add('ptab--active');
+                const filter = tab.dataset.filter;
+                cards.forEach(card => {
+                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
