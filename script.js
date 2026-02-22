@@ -49,8 +49,6 @@ const revealSelectors = [
     '.about-row',
     '.about-row-label',
     '.about-row-body',
-    '.hero-content',
-    '.hero-image-wrap',
     '.about-bento-summary',
     '.section-divider',
     '.portfolio-hero-inner',

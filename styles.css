@@ -1685,11 +1685,9 @@ h1 {
         flex-direction: column;
     }
 
-    .hba-circle--tl {
-        width: 160px;
-        height: 160px;
-        bottom: -60px;
-        left: -50px;
+    .hba-circle--tl,
+    .hba--pie {
+        display: none;
     }
 
     .about-section {
