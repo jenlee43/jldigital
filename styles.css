@@ -27,7 +27,7 @@ body {
     line-height: 1.7;
     color: var(--plum);
     background: var(--white);
-    overflow-x: hidden;
+    overflow-x: clip; /* clip instead of hidden — hidden breaks position:fixed on iOS */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
 }
 
 /* ----- Nav ----- */
@@ -152,7 +152,7 @@ h1 {
 
 .hero-tagline {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     font-weight: 400;
     line-height: 1.2;
     color: var(--heading-color);
@@ -232,7 +232,7 @@ h1 {
 
 .projects-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     color: var(--heading-color);
     margin-bottom: 2rem;
     text-align: center;
@@ -327,7 +327,7 @@ h1 {
 
 .placeholder-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     color: var(--heading-color);
     margin-bottom: 0.5rem;
 }
@@ -364,7 +364,7 @@ h1 {
 
 .about-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     color: var(--heading-color);
     margin-bottom: 1.25rem;
 }
@@ -638,7 +638,7 @@ h1 {
 
 .services-plum-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     color: var(--white);
     margin-bottom: 2.5rem;
     text-align: center;
@@ -1076,7 +1076,7 @@ h1 {
 
 .contact-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 80px;
+    font-size: clamp(2.25rem, 8vw, 80px);
     font-weight: 400;
     color: var(--white);
     margin-bottom: 0.75rem;
@@ -1084,8 +1084,7 @@ h1 {
 
 .contact-text {
     color: rgba(255, 255, 255, 0.85);
-    font-size: 20px;
-    white-space: nowrap;
+    font-size: clamp(1rem, 3vw, 20px);
     margin-bottom: 2rem;
 }
 
@@ -1488,5 +1487,26 @@ h1 {
 
     .contact-details {
         flex-direction: column;
+    }
+
+    .about-section {
+        padding: 5rem 1.5rem 6rem;
+    }
+
+    .about-summary {
+        font-size: 1.1rem;
+    }
+
+    .services-section--plum {
+        padding: 4rem 1.25rem 5rem;
+        min-height: unset;
+    }
+
+    .projects-section {
+        padding: 3rem 1.25rem 4rem;
+    }
+
+    .contact-section {
+        padding: 4rem 1.25rem;
     }
 }
