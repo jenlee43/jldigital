@@ -682,6 +682,25 @@ h1 {
     margin: 0 auto;
 }
 
+.about-page-bio {
+    margin: 1.25rem auto 0;
+    max-width: 560px;
+    font-size: 1rem;
+    color: var(--plum-soft);
+    line-height: 1.7;
+}
+
+.about-page-name-note {
+    margin: 1.25rem auto 0;
+    max-width: 560px;
+    font-size: 0.95rem;
+    color: var(--plum-soft);
+    line-height: 1.7;
+    padding-top: 1rem;
+    border-top: 1px solid var(--mist-lavender-dark);
+    font-style: italic;
+}
+
 /* Alternating rows */
 .about-row {
     display: grid;
