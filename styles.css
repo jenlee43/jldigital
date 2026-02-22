@@ -128,6 +128,70 @@ h1 {
 .hero {
     padding: 10rem 2rem 8rem;
     margin: 0 auto;
+    background: var(--mist-lavender);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background art */
+.hero-bg-art {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hba {
+    position: absolute;
+    opacity: 0.12;
+}
+
+.hba--pie {
+    width: 260px;
+    height: 260px;
+    top: 40px;
+    right: -50px;
+    opacity: 0.13;
+    animation: spin-slow 40s linear infinite reverse;
+}
+
+.hba-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: #2B1E4A;
+    opacity: 0.08;
+}
+
+.hba-circle--tl {
+    width: 300px;
+    height: 300px;
+    bottom: -120px;
+    left: -100px;
+}
+
+.hba-circle--bl {
+    width: 180px;
+    height: 180px;
+    bottom: -70px;
+    left: 6%;
+}
+
+.hba-circle--br {
+    width: 240px;
+    height: 240px;
+    bottom: -90px;
+    right: 8%;
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Ensure hero content sits above the art */
+.hero-inner {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-inner {
@@ -167,18 +231,35 @@ h1 {
     color: #3dbeb3;
 }
 
+.hero-role {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--emerald-mint);
+    margin-bottom: 1rem;
+}
+
 .hero-intro {
     font-size: 1.2rem;
     color: var(--plum-soft);
     max-width: 420px;
 }
 
-.hero-image-wrap {
-    position: relative;
+/* ── Hero bento (right column) ──────────────────────────────── */
+.hero-bento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    gap: 0.85rem;
+}
+
+/* Photo spans left column, rows 1–2 */
+.hb-photo {
+    grid-column: 1;
+    grid-row: 1 / span 2;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 4/5;
-    max-height: 520px;
     background: var(--mist-lavender);
 }
 
@@ -186,7 +267,103 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
     display: block;
+}
+
+/* Stat boxes — right column, rows 1 & 2 */
+.hb-stat {
+    border-radius: 16px;
+    padding: 1.25rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.25rem;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hb-stat:hover {
+    transform: translateY(-4px);
+}
+
+.hb-stat--purple { background: var(--primary); }
+.hb-stat--teal   { background: var(--emerald-mint); }
+.hb-stat--light  { background: var(--white); border: 2px solid var(--primary); }
+.hb-stat--plum   { background: var(--plum); }
+
+.hb-num {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.hb-stat--purple .hb-num,
+.hb-stat--teal   .hb-num,
+.hb-stat--plum   .hb-num { color: #fff; }
+.hb-stat--light  .hb-num { color: var(--heading-color); }
+
+.hb-label {
+    font-size: 0.78rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.hb-stat--purple .hb-label,
+.hb-stat--teal   .hb-label,
+.hb-stat--plum   .hb-label { color: rgba(255,255,255,0.8); }
+.hb-stat--light  .hb-label { color: var(--plum-soft); }
+
+/* Bottom row: 4 small stat boxes span full width */
+.hb-stat--light,
+.hb-stat--plum {
+    grid-row: 3;
+}
+
+/* Certified badge — spans full width on last row */
+.hb-certified {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    background: #FFF8E1;
+    border: 1px solid #F0D060;
+    border-radius: 12px;
+    color: #B8860B;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+/* ----- Progress bar divider ----- */
+.section-progress-divider {
+    background: var(--mist-lavender-dark);
+    height: 6px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.spd-bar {
+    height: 100%;
+    width: 72%;
+    background: linear-gradient(90deg, var(--emerald-mint) 0%, #3dbeb3cc 100%);
+    border-radius: 0 999px 999px 0;
+    position: relative;
+}
+
+.spd-bar::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: var(--emerald-mint);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #F4F1FF, 0 0 0 5px var(--emerald-mint);
 }
 
 /* ----- Section divider (hero / about) ----- */
@@ -1459,9 +1636,28 @@ h1 {
         margin-right: auto;
     }
 
-    .hero-image-wrap {
-        max-width: 380px;
+    .hero-bento {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 220px auto auto;
+        max-width: 480px;
         margin: 0 auto;
+    }
+
+    .hb-photo {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        max-height: 220px;
+    }
+
+    .hb-stat--purple { grid-column: 1; grid-row: 2; }
+    .hb-stat--teal   { grid-column: 2; grid-row: 2; }
+    .hb-stat--light  { grid-column: 1; grid-row: 3; }
+    .hb-stat--plum   { grid-column: 2; grid-row: 3; }
+
+    .hb-certified { grid-row: 4; }
+
+    .hero-intro {
+        max-width: none;
     }
 
     .about-inner {

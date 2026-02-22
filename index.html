@@ -29,20 +29,63 @@
     <main>
         <!-- Hero / Tagline -->
         <section class="hero">
+            <!-- Decorative data-symbol background -->
+            <div class="hero-bg-art" aria-hidden="true">
+                <!-- Pie/donut chart top-right -->
+                <svg class="hba hba--pie" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M80 80 L80 10 A70 70 0 0 1 145 115 Z" fill="#6A4CFF"/>
+                    <path d="M80 80 L145 115 A70 70 0 0 1 20 120 Z" fill="#3dbeb3"/>
+                    <path d="M80 80 L20 120 A70 70 0 0 1 80 10 Z" fill="#8B7BFF"/>
+                    <circle cx="80" cy="80" r="30" fill="#F4F1FF"/>
+                </svg>
+                <!-- Plain circles -->
+                <div class="hba-circle hba-circle--tl"></div>
+            </div>
+
             <div class="hero-inner">
                 <div class="hero-content">
                     <p class="hero-greeting">Hi, I'm Jenniffer — the heart behind JL Digital.</p>
+                  
                     <h1 class="hero-tagline">
                         <span class="line">Joyful Designs.</span>
                         <span class="line">Lasting Results.</span>
                     </h1>
                     <p class="hero-intro">A website should feel like home — for you and your customers.</p>
                 </div>
-                <div class="hero-image-wrap">
-                    <img src="images/me.jpg" alt="Jenniffer Lee — JL Digital" class="hero-image" />
+
+                <!-- Right: photo + stats bento -->
+                <div class="hero-bento">
+                    <div class="hb-photo">
+                        <img src="images/me.jpg" alt="Jenniffer Lee — JL Digital" class="hero-image" />
+                    </div>
+                    <div class="hb-stat hb-stat--purple">
+                        <span class="hb-num">$390K+</span>
+                        <span class="hb-label">Total sales for one client</span>
+                    </div>
+                    <div class="hb-stat hb-stat--teal">
+                        <span class="hb-num">$83K+</span>
+                        <span class="hb-label">Ads conversion value</span>
+                    </div>
+                    <div class="hb-stat hb-stat--light">
+                            <span class="hb-num">3+</span>
+                        <span class="hb-label">Years in SEO &amp; PPC</span>
+                    </div>
+                    <div class="hb-stat hb-stat--plum">
+                        <span class="hb-num">100+</span>
+                        <span class="hb-label">Campaigns created</span>
+                    </div>
+                    <div class="hb-certified">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Google Ads Certified
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Progress bar divider -->
+        <div class="section-progress-divider" aria-hidden="true">
+            <div class="spd-bar"></div>
+        </div>
 
         <!-- About -->
         <section id="about" class="about-section">
