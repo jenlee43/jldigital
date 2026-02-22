@@ -23,22 +23,96 @@
             </ul>
         </div>
     </nav>
+
     <main>
-        <section class="contact-section contact-section--page">
-            <div class="contact-inner">
-                <h1 class="contact-title">Let's work together</h1>
-                <p class="contact-text">Ready to grow your business with a site that feels like you and a strategy that works?</p>
-                <div class="contact-details">
-                    <a href="mailto:hello@jldigital.com" class="contact-link">hello@jldigital.com</a>
-                    <a href="tel:+15551234567" class="contact-link">+1 (555) 123-4567</a>
+        <!-- Hero -->
+        <section class="contact-page-hero">
+            <div class="contact-page-hero-inner">
+                <p class="contact-page-eyebrow">Get in Touch</p>
+                <h1 class="contact-page-headline">Let's Work Together</h1>
+                <p class="contact-page-lead">Ready to grow your business with a site that feels like you and a strategy that works? I'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Form + Info -->
+        <section class="contact-form-section">
+            <div class="contact-form-inner">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="contact-info-title">Contact Info</h2>
+                    <ul class="contact-info-list">
+                        <li>
+                            <span class="cinfo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </span>
+                            <a href="mailto:jennifferlee41@gmail.com" class="cinfo-link">jennifferlee41@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="cinfo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.77 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
+                            <a href="tel:+15551234567" class="cinfo-link">+1 (555) 123-4567</a>
+                        </li>
+                        <li>
+                            <span class="cinfo-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </span>
+                            <span class="cinfo-text">Typically replies within 24 hours</span>
+                        </li>
+                    </ul>
+
+                    <div class="contact-info-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.592 1.323-1.324V1.324C24 .593 23.408 0 22.676 0z"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
-                </div>
+
+                <!-- Form -->
+                <!-- Replace YOUR_FORM_ID with your Formspree form ID after registering at formspree.io -->
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="hidden" name="_replyto" value="jennifferlee41@gmail.com">
+
+                    <div class="cf-row cf-row--2">
+                        <div class="cf-group">
+                            <label class="cf-label" for="name">Your Name <span>*</span></label>
+                            <input class="cf-input" type="text" id="name" name="name" placeholder="Jane Smith" required />
+                        </div>
+                        <div class="cf-group">
+                            <label class="cf-label" for="email">Your Email <span>*</span></label>
+                            <input class="cf-input" type="email" id="email" name="email" placeholder="jane@example.com" required />
+                        </div>
+                    </div>
+
+                    <div class="cf-group">
+                        <label class="cf-label" for="service">Service Interested In</label>
+                        <select class="cf-input cf-select" id="service" name="service">
+                            <option value="" disabled selected>Select a service…</option>
+                            <option value="Web Design">Web Design</option>
+                            <option value="SEO">SEO</option>
+                            <option value="SEM / Google Ads">SEM / Google Ads</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="eCommerce">eCommerce</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="cf-group">
+                        <label class="cf-label" for="message">Message <span>*</span></label>
+                        <textarea class="cf-input cf-textarea" id="message" name="message" rows="6" placeholder="Tell me a bit about your project or what you need help with…" required></textarea>
+                    </div>
+
+                    <button class="cf-submit" type="submit">Send Message →</button>
+                </form>
+
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer-inner">
             <p class="footer-logo"><img src="logo2.png" alt="JL Digital" class="footer-logo-img" /></p>
