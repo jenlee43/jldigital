@@ -10,8 +10,10 @@ if (navToggle && navMenu) {
 
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
+            setTimeout(() => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            }, 150);
         });
     });
 }
