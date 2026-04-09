@@ -1457,6 +1457,12 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.contact-email-line {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 0.5rem;
+}
+
 .contact-reply-time {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.55);
@@ -1473,9 +1479,10 @@ h1 {
 }
 
 .contact-link {
-    color: var(--emerald-mint);
+    color: #FFD700;
     text-decoration: none;
-    font-weight: 500;
+    font-size: inherit;
+    font-weight: 400;
     transition: var(--transition);
 }
 
