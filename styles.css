@@ -1457,12 +1457,19 @@ h1 {
     margin-bottom: 2rem;
 }
 
+.contact-reply-time {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
 .contact-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.5rem 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contact-link {
