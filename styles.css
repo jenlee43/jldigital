@@ -896,10 +896,21 @@ h1 {
     transition: var(--transition);
 }
 
-.svc-box:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.2);
+.svc-box {
+    cursor: default;
 }
+
+.svc-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 24px 56px rgba(0, 0, 0, 0.25);
+}
+
+.svc-box--plum1:hover  { background: #ebe6ff; }
+.svc-box--plum2:hover  { background: #524fa0; }
+.svc-box--violet1:hover { background: #5539e0; }
+.svc-box--violet2:hover { background: #7a68f0; }
+.svc-box--emerald:hover { background: #2f9d94; }
+.svc-box--lavender:hover { background: #ebe6ff; }
 
 .svc-box-title {
     font-family: 'Poppins', sans-serif;
