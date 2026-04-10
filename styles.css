@@ -408,6 +408,7 @@ h1 {
 .projects-inner {
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .projects-title {
@@ -478,18 +479,24 @@ h1 {
 
 .projects-more {
     display: inline-block;
+    margin: 2rem auto 0;
     text-align: center;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: var(--emerald-mint);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--primary);
     text-decoration: none;
-    transition: var(--transition);
+    padding: 0.85rem 2.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
 }
 
 @media (hover: hover) {
     .projects-more:hover {
-        color: var(--emerald-mint-dark);
+        background: #5539e0;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(106, 76, 255, 0.3);
     }
 }
 
