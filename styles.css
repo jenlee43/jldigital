@@ -1368,6 +1368,42 @@ h1 {
     margin-bottom: 2.5rem;
 }
 
+.skills-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-tab {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    border: 2px solid var(--mist-lavender-dark);
+    background: var(--white);
+    color: var(--plum-soft);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.skill-tab:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.skill-tab--active {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.skills-panel {
+    min-height: 80px;
+}
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;

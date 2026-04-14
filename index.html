@@ -102,31 +102,67 @@
         <section id="skills" class="skills-section">
             <div class="skills-inner">
                 <h1 class="skills-title">Technical Skills</h1>
-                <div class="skills-grid">
-                    <span class="skill-tag">Google Ads</span>
-                    <span class="skill-tag">Google Shopping</span>
-                    <span class="skill-tag">Microsoft Ads</span>
-                    <span class="skill-tag">Shopify</span>
-                    <span class="skill-tag">eCommerce</span>
-                    <span class="skill-tag">SEO</span>
-                    <span class="skill-tag">YouTube Optimization</span>
-                    <span class="skill-tag">Facebook Page Optimization</span>
-                    <span class="skill-tag">Google Search Console</span>
-                    <span class="skill-tag">Google Analytics</span>
-                    <span class="skill-tag">WordPress</span>
-                    <span class="skill-tag">Keywords Research</span>
-                    <span class="skill-tag">HTML &amp; CSS</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">Canva</span>
-                    <span class="skill-tag">Photoshop</span>
-                    <span class="skill-tag">Adobe Illustrator</span>
-                    <span class="skill-tag">InDesign</span>
-                    <span class="skill-tag">Animated Banner Ads</span>
-                    <span class="skill-tag">Digital Marketing</span>
-                    <span class="skill-tag">Website Management</span>
-                    <span class="skill-tag">Content Management</span>
-                    <span class="skill-tag">Web Design</span>
-                    <span class="skill-tag">AI (GPT, Gemini, DeepSeek, Cursor)</span>
+                <nav class="skills-tabs" role="tablist">
+                    <button class="skill-tab skill-tab--active" data-skill-filter="marketing">Marketing &amp; Ads</button>
+                    <button class="skill-tab" data-skill-filter="ecommerce">eCommerce</button>
+                    <button class="skill-tab" data-skill-filter="analytics">Analytics</button>
+                    <button class="skill-tab" data-skill-filter="design">Design</button>
+                    <button class="skill-tab" data-skill-filter="dev">Dev, Hosting &amp; AI</button>
+                </nav>
+
+                <div class="skills-panel" data-skill-cat="marketing">
+                    <div class="skills-grid">
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Google Shopping</span>
+                        <span class="skill-tag">Microsoft Ads</span>
+                        <span class="skill-tag">SEO</span>
+                        <span class="skill-tag">Keywords Research</span>
+                        <span class="skill-tag">Digital Marketing</span>
+                        <span class="skill-tag">Content Management</span>
+                        <span class="skill-tag">YouTube Optimization</span>
+                        <span class="skill-tag">Facebook Page Optimization</span>
+                    </div>
+                </div>
+
+                <div class="skills-panel" data-skill-cat="ecommerce" style="display:none;">
+                    <div class="skills-grid">
+                        <span class="skill-tag">Shopify</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">Google Merchant</span>
+                        <span class="skill-tag">Amazon</span>
+                        <span class="skill-tag">eBay</span>
+                        <span class="skill-tag">Poshmark</span>
+                    </div>
+                </div>
+
+                <div class="skills-panel" data-skill-cat="analytics" style="display:none;">
+                    <div class="skills-grid">
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">Google Search Console</span>
+                        <span class="skill-tag">Google Tag Manager</span>
+                    </div>
+                </div>
+
+                <div class="skills-panel" data-skill-cat="design" style="display:none;">
+                    <div class="skills-grid">
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Adobe Illustrator</span>
+                        <span class="skill-tag">InDesign</span>
+                        <span class="skill-tag">Animated Banner Ads</span>
+                    </div>
+                </div>
+
+                <div class="skills-panel" data-skill-cat="dev" style="display:none;">
+                    <div class="skills-grid">
+                        <span class="skill-tag">HTML &amp; CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Bluehost</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">AI (GPT, Gemini, DeepSeek, Cursor)</span>
+                    </div>
                 </div>
             </div>
         </section>

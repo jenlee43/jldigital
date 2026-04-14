@@ -80,6 +80,21 @@ revealSelectors.forEach(sel => {
     });
 });
 
+// ── Skills tabs ──────────────────────────────────────────────────────────────
+const skillTabs = document.querySelectorAll('.skill-tab');
+const skillPanels = document.querySelectorAll('.skills-panel');
+
+skillTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        skillTabs.forEach(t => t.classList.remove('skill-tab--active'));
+        tab.classList.add('skill-tab--active');
+        const filter = tab.dataset.skillFilter;
+        skillPanels.forEach(panel => {
+            panel.style.display = panel.dataset.skillCat === filter ? '' : 'none';
+        });
+    });
+});
+
 // ── Nav link underline slide ───────────────────────────────────────────────────
 document.querySelectorAll('.nav-menu a:not(.nav-cta)').forEach(link => {
     link.classList.add('nav-link-anim');
