@@ -1379,25 +1379,28 @@ h1 {
 .skill-tab {
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
     border-radius: 50px;
-    border: 2px solid var(--mist-lavender-dark);
-    background: var(--white);
-    color: var(--plum-soft);
+    border: none;
+    background: var(--plum);
+    color: rgba(255, 255, 255, 0.85);
     cursor: pointer;
+    box-shadow: 0 3px 10px rgba(43, 30, 74, 0.2);
     transition: all 0.25s ease;
 }
 
 .skill-tab:hover {
-    border-color: var(--primary);
-    color: var(--primary);
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(106, 76, 255, 0.3);
 }
 
 .skill-tab--active {
     background: var(--primary);
     color: var(--white);
-    border-color: var(--primary);
+    box-shadow: 0 6px 20px rgba(106, 76, 255, 0.4);
 }
 
 .skills-panel {
