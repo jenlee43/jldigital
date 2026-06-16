@@ -857,7 +857,7 @@ h1 {
 .services-bento-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 280px 280px 280px 280px;
+    grid-template-rows: 280px 280px 280px 280px 280px;
     gap: 1.5rem;
 }
 
@@ -894,6 +894,10 @@ h1 {
     grid-column: 3 / span 2;
     grid-row: 4;
 }
+.svc-box--indigo {
+    grid-column: 1 / -1;
+    grid-row: 5;
+}
 
 .svc-box {
     border-radius: 24px;
@@ -921,6 +925,7 @@ h1 {
 .svc-box--lavender:hover { background: #ebe6ff; }
 .svc-box--teal:hover     { background: #1a8a7d; }
 .svc-box--slate:hover    { background: #3d4f5f; }
+.svc-box--indigo:hover   { background: #3730a3; }
 
 .svc-box-title {
     font-family: 'Poppins', sans-serif;
@@ -998,6 +1003,12 @@ h1 {
 .svc-box--slate .svc-box-title,
 .svc-box--slate .svc-box-desc { color: rgba(255, 255, 255, 0.95); }
 
+.svc-box--indigo {
+    background: #4338ca;
+}
+.svc-box--indigo .svc-box-title,
+.svc-box--indigo .svc-box-desc { color: rgba(255, 255, 255, 0.95); }
+
 @media (max-width: 900px) {
     .services-bento-grid {
         grid-template-columns: 1fr;
@@ -1011,7 +1022,8 @@ h1 {
     .svc-box--emerald,
     .svc-box--lavender,
     .svc-box--teal,
-    .svc-box--slate {
+    .svc-box--slate,
+    .svc-box--indigo {
         grid-column: auto;
         grid-row: auto;
     }
