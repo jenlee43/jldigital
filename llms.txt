@@ -1,0 +1,24 @@
+# JL Digital ✨ Joyful Designs. Lasting Results.
+
+## Home
+[Home](https://jldigital.vercel.app/index.html#hero): This is the main landing page for JL Digital, showcasing the brand's mission to deliver joyful designs that yield lasting results.
+
+## Services
+[Services](https://jldigital.vercel.app/index.html#services): A detailed overview of the various design services offered by JL Digital, emphasizing their commitment to quality and client satisfaction.
+
+## Skills
+[Skills](https://jldigital.vercel.app/index.html#skills): A summary of the key skills possessed by the team at JL Digital, highlighting their expertise in various design disciplines.
+
+## Portfolio
+[Portfolio](https://jldigital.vercel.app/index.html#projects): A collection of past projects that exemplify the design capabilities of JL Digital, demonstrating their creative approach and successful outcomes.
+
+## Education
+[Education](https://jldigital.vercel.app/index.html#education): Information regarding the educational background and qualifications of the team members at JL Digital, underscoring their professional training in design.
+
+## Contact
+[Contact](https://jldigital.vercel.app/index.html#contact): Details on how to get in touch with JL Digital, including email contact information for inquiries and consultations.
+
+## Additional Links
+[More projects](https://jldigital.vercel.app/portfolio.html): A link to view additional projects completed by JL Digital, providing further insight into their design style and effectiveness.
+
+[Email](mailto:jennifferlee41@gmail.com): Contact JL Digital directly via email at jennifferlee41@gmail.com for any questions or project discussions.
