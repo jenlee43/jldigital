@@ -1391,6 +1391,73 @@ h1 {
     color: #666;
 }
 
+/* ----- Certifications ----- */
+.certifications-section {
+    padding: 6rem 2rem 8rem;
+    background: var(--mist-lavender);
+}
+
+.certifications-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.certifications-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.25rem, 8vw, 80px);
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.cert-card {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(43, 30, 74, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(43, 30, 74, 0.12);
+}
+
+.cert-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(43, 30, 74, 0.08);
+    display: block;
+}
+
+.cert-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--plum);
+    margin: 1.25rem 0 0.25rem;
+    text-align: center;
+}
+
+.cert-meta {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 640px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ----- Technical Skills ----- */
 .skills-section {
     padding: 6rem 2rem;
