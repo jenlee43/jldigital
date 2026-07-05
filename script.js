@@ -80,6 +80,29 @@ revealSelectors.forEach(sel => {
     });
 });
 
+// ── Certificate lightbox ─────────────────────────────────────────────────────
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.cert-img--clickable').forEach(img => {
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+    });
+});
+
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
+}
+
+if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) lightbox.classList.remove('active');
+    });
+}
+
 // ── Skills tabs ──────────────────────────────────────────────────────────────
 const skillTabs = document.querySelectorAll('.skill-tab');
 const skillPanels = document.querySelectorAll('.skills-panel');
