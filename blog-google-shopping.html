@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Approach Google Shopping: Setup to Search Query Bidding — JL Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zet4voj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="logo.png" alt="JL Digital" /></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Portfolio</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="case-study-hero">
+            <div class="case-study-hero-inner">
+                <p class="case-study-eyebrow">Blog</p>
+                <h1 class="case-study-headline">How I Approach Google Shopping: Setup to Search Query Bidding</h1>
+                <p class="case-study-sub">A two-phase system for getting the foundation right, then refining how spend is allocated.</p>
+            </div>
+        </section>
+
+        <section class="case-study-body">
+            <div class="case-study-content">
+                <p class="blog-credit">Much of the framework below builds on what I learned from Store Growers' Google Shopping Success and Performance Max Impact video courses. I've adapted their approach based on how I actually run accounts, but credit for the underlying structure goes to their training.</p>
+
+                <p>Google Shopping campaigns can look deceptively simple from the outside — a product feed, a bid, and you're live. In reality, the advertisers who consistently win are the ones who treat it as a system with two distinct phases: getting the foundation right, and then continuously refining how spend is allocated once traffic starts flowing in. Here's how I work through both.</p>
+
+                <h2>Phase 1: Getting the Foundation Right</h2>
+                <p>Before a single bid gets optimized, the groundwork has to be solid. I run through a structured checklist that covers four areas:</p>
+
+                <p><strong>Your Store</strong><br>
+                Everything starts with the product data itself. That means accurate product information and images in the store's back-end, plus the operational details customers (and Google) expect to see clearly: contact information, shipping policies, and returns/refund terms.</p>
+
+                <p><strong>Google Merchant Center</strong><br>
+                This is where the product feed comes to life. My process here is:</p>
+                <ul>
+                    <li>Create and verify the Google Merchant Center (GMC) account, including domain claims</li>
+                    <li>Configure shipping and tax settings (tax being US-specific)</li>
+                    <li>Build the product feed — ideally through a plugin, app, or extension rather than fully manual work, though manual export, Google Sheets, or a dedicated feed management tool are all valid fallback options</li>
+                    <li>Upload the feed, then immediately check the Diagnostics tab to catch and fix errors before they quietly cap performance</li>
+                </ul>
+
+                <p><strong>Google Ads</strong><br>
+                Once the feed is clean, I connect it to the advertising side: creating the Google Ads account, installing conversion tracking, linking GMC to Ads, and uploading a customer list to unlock audience signals.</p>
+
+                <p><strong>Google Remarketing</strong><br>
+                Finally, I lay the groundwork for remarketing — adding the Google Ads tag, confirming dynamic remarketing parameters are firing correctly, and building out additional audiences inside Google Ads for future targeting.</p>
+
+                <p>Skipping or rushing any one of these steps tends to surface later as a mysterious performance issue, so I treat this checklist as non-negotiable before moving to optimization.</p>
+
+                <h2>Phase 2: Search Query Level Bidding</h2>
+                <p>Once the account is live and generating search query data, the real optimization work begins. This is where campaign structure and bid strategy make or break efficiency. I typically choose between a 2-level or 3-level structure depending on account complexity.</p>
+
+                <h3>2-Level Structure</h3>
+
+                <p><strong>Brand / Non-brand split:</strong></p>
+                <ul>
+                    <li><em>Campaign #1 (Branded queries):</em> Low priority, high bids, no negative keywords</li>
+                    <li><em>Campaign #2 (Everything else):</em> Medium priority, lower bids, brand terms added as negatives</li>
+                </ul>
+
+                <p><strong>Detail / Other split:</strong></p>
+                <ul>
+                    <li><em>Campaign #1 (Detail queries):</em> Low priority, high bids, no negatives</li>
+                    <li><em>Campaign #2 (Everything else):</em> Medium priority, lower bids, with identified "detail" (often longer-tail) keywords excluded</li>
+                </ul>
+
+                <h3>3-Level Structure</h3>
+                <p>When there's enough volume to justify more granularity, I layer in a third tier:</p>
+
+                <p><strong>Product / Brand / Non-brand:</strong></p>
+                <ul>
+                    <li><em>Campaign #1 (Product queries):</em> Low priority, high bids, no negatives</li>
+                    <li><em>Campaign #2 (Branded queries):</em> Medium priority, lower bids, brand terms negated</li>
+                    <li><em>Campaign #3 (Everything else):</em> High priority, lowest bids, both product and brand terms excluded</li>
+                </ul>
+
+                <p><strong>Brand / Detail / Other:</strong></p>
+                <ul>
+                    <li><em>Campaign #1 (Branded queries):</em> Low priority, high bids, no negatives</li>
+                    <li><em>Campaign #2 (Detail queries):</em> Medium priority, lower bids, brand terms negated</li>
+                    <li><em>Campaign #3 (Everything else):</em> High priority, lowest bids, brand and detail terms excluded</li>
+                </ul>
+
+                <p>The logic underneath all of these structures is the same: the more specific and high-intent the search query, the lower the campaign priority and the higher the bid — because you want that traffic to route through the most targeted campaign first. Priority increases and bids decrease as you move toward the catch-all campaign, so budget doesn't get siphoned away from your best-performing segments by broader match traffic.</p>
+
+                <h2>Why This Two-Phase Approach Works</h2>
+                <p>Treating setup and bidding as separate, sequenced phases keeps me from optimizing on top of a shaky foundation. A perfectly tiered bidding structure won't fix a feed full of errors, and a flawless feed won't compensate for a bidding structure that lets broad queries cannibalize brand budget. Getting both right, in order, is what turns Google Shopping from a spend center into a predictable growth channel.</p>
+
+                <p class="blog-credit blog-credit--footer"><em>Credit: The setup checklist and search query bidding structures referenced in this post are frameworks I learned through <a href="https://www.storegrowers.com/" target="_blank" rel="noopener">Store Growers'</a> Google Shopping Success and Performance Max Impact courses.</em></p>
+
+                <div class="case-study-back">
+                    <a href="index.html" class="project-link-btn">← Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-logo"><img src="logo2.png" alt="JL Digital" class="footer-logo-img" /></p>
+            <p class="footer-tagline">Joyful Designs. Lasting Results.</p>
+            <p class="footer-copy">&copy; <span id="year"></span> Jen Lee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
