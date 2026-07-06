@@ -1947,6 +1947,31 @@ h1 {
     height: auto;
 }
 
+.case-study-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--heading-color);
+    margin: 2rem 0 0.75rem;
+}
+
+.case-study-content a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.blog-credit {
+    font-style: italic;
+    color: var(--plum-soft);
+    border-left: 3px solid var(--mist-lavender-dark);
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-credit--footer {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+}
+
 /* ----- Contact Page ----- */
 .contact-page-hero {
     padding: 10rem 2rem 5rem;
