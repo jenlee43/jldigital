@@ -1954,9 +1954,15 @@ h1 {
     margin: 2rem 0 0.75rem;
 }
 
-.case-study-content a {
+.case-study-content a:not(.project-link-btn):not(.case-study-btn) {
     color: var(--primary);
     font-weight: 600;
+}
+
+.case-study-back .project-link-btn {
+    display: inline-block;
+    color: var(--white);
+    background: var(--primary);
 }
 
 .blog-credit {
