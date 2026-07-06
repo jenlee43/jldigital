@@ -334,15 +334,24 @@
 
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                if (tab.classList.contains('ptab--soon')) return;
+                if (tab.classList.contains('ptab--soon') || !tab.dataset.filter) return;
                 tabs.forEach(t => t.classList.remove('ptab--active'));
                 tab.classList.add('ptab--active');
                 filterCards(tab.dataset.filter);
             });
         });
 
-        const activeTab = document.querySelector('.ptab--active');
-        if (activeTab) filterCards(activeTab.dataset.filter);
+        const hashFilter = window.location.hash.replace('#', '');
+        const hashTab = hashFilter ? document.querySelector(`.ptab[data-filter="${hashFilter}"]`) : null;
+
+        if (hashTab) {
+            tabs.forEach(t => t.classList.remove('ptab--active'));
+            hashTab.classList.add('ptab--active');
+            filterCards(hashFilter);
+        } else {
+            const activeTab = document.querySelector('.ptab--active');
+            if (activeTab?.dataset.filter) filterCards(activeTab.dataset.filter);
+        }
     </script>
 </body>
 </html>
