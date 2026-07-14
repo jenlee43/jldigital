@@ -183,6 +183,51 @@ h1 {
     line-height: 1.3;
 }
 
+.hero-open {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-open-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--plum-soft);
+}
+
+.hero-open-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--emerald-mint);
+    box-shadow: 0 0 0 3px rgba(47, 157, 148, 0.25);
+    flex-shrink: 0;
+}
+
+.hero-open-link {
+    display: inline-block;
+    margin-top: 0.85rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.hero-open-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 .hero-headline {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(1.25rem, 3vw, 1.75rem);
