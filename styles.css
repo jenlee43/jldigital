@@ -485,6 +485,7 @@ h1 {
 
 .project-card-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0 1.75rem 1.75rem;
 }
