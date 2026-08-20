@@ -103,6 +103,38 @@ if (lightbox) {
     });
 }
 
+// ── Certifications carousel ───────────────────────────────────────────────────
+const certScroll = document.getElementById('certScroll');
+const certPrev = document.querySelector('.cert-arrow--prev');
+const certNext = document.querySelector('.cert-arrow--next');
+
+function getCertScrollAmount() {
+    if (!certScroll) return 320;
+    const card = certScroll.querySelector('.cert-card');
+    if (!card) return 320;
+    const track = certScroll.querySelector('.certifications-track');
+    const gap = track ? parseFloat(getComputedStyle(track).gap) || 24 : 24;
+    return card.offsetWidth + gap;
+}
+
+function updateCertArrows() {
+    if (!certScroll || !certPrev || !certNext) return;
+    const maxScroll = certScroll.scrollWidth - certScroll.clientWidth;
+    certPrev.disabled = certScroll.scrollLeft <= 1;
+    certNext.disabled = certScroll.scrollLeft >= maxScroll - 1;
+}
+
+function scrollCerts(direction) {
+    if (!certScroll) return;
+    certScroll.scrollBy({ left: direction * getCertScrollAmount(), behavior: 'smooth' });
+}
+
+certPrev?.addEventListener('click', () => scrollCerts(-1));
+certNext?.addEventListener('click', () => scrollCerts(1));
+certScroll?.addEventListener('scroll', updateCertArrows);
+window.addEventListener('resize', updateCertArrows);
+updateCertArrows();
+
 // ── Skills tabs ──────────────────────────────────────────────────────────────
 const skillTabs = document.querySelectorAll('.skill-tab');
 const skillPanels = document.querySelectorAll('.skills-panel');
