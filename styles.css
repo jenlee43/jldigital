@@ -134,14 +134,18 @@ h1 {
 
 /* ----- Hero ----- */
 .hero {
-    padding: 10rem 2rem 6rem;
+    padding: 8rem 2rem;
     min-height: 100vh;
     background: var(--mist-lavender);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .hero-inner--split {
+    width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
@@ -2745,17 +2749,15 @@ h1 {
     }
 
     .hero {
-        padding: 7rem 1.5rem 4rem;
+        padding: 7rem 1.5rem;
+        min-height: unset;
+        display: block;
     }
 
     .hero-inner--split {
         grid-template-columns: 1fr;
         gap: 2.5rem;
         text-align: center;
-    }
-
-    .hero {
-        min-height: unset;
     }
 
     .hero-photo {
