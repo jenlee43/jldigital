@@ -2558,12 +2558,18 @@ h1 {
 
 .pgrid-img {
     width: 100%;
-    width: 100%;
     aspect-ratio: 3 / 2;
     object-fit: contain;
     object-position: center;
     display: block;
     transition: transform 0.5s cubic-bezier(0.22,1,0.36,1);
+}
+
+.pgrid-card[data-category="web-design"] .pgrid-img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top center;
+    background: var(--white);
 }
 
 @media (hover: hover) {
