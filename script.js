@@ -83,25 +83,68 @@ revealSelectors.forEach(sel => {
 // ── Certificate lightbox ─────────────────────────────────────────────────────
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
+const lightboxPdf = document.getElementById('lightboxPdf');
 const lightboxClose = document.getElementById('lightboxClose');
 
-document.querySelectorAll('.cert-img--clickable').forEach(img => {
-    img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
+function openLightboxImage(src, alt) {
+    if (!lightbox || !lightboxImg) return;
+    lightboxPdf.hidden = true;
+    lightboxPdf.src = '';
+    lightboxImg.hidden = false;
+    lightboxImg.src = src;
+    lightboxImg.alt = alt;
+    lightbox.classList.add('active');
+}
+
+function openLightboxPdf(src, title) {
+    if (!lightbox || !lightboxPdf) return;
+    lightboxImg.hidden = true;
+    lightboxImg.src = '';
+    lightboxPdf.hidden = false;
+    lightboxPdf.src = src;
+    lightboxPdf.title = title;
+    lightbox.classList.add('active');
+}
+
+function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('active');
+    if (lightboxImg) {
+        lightboxImg.hidden = true;
+        lightboxImg.src = '';
+    }
+    if (lightboxPdf) {
+        lightboxPdf.hidden = true;
+        lightboxPdf.src = '';
+    }
+}
+
+document.querySelectorAll('.cert-img--clickable').forEach(el => {
+    el.addEventListener('click', () => {
+        const pdfSrc = el.dataset.pdfSrc;
+        if (pdfSrc) {
+            openLightboxPdf(pdfSrc, el.getAttribute('aria-label') || 'Certificate');
+            return;
+        }
+        if (el.tagName === 'IMG') {
+            openLightboxImage(el.src, el.alt);
+        }
     });
 });
 
 if (lightboxClose) {
-    lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
+    lightboxClose.addEventListener('click', closeLightbox);
 }
 
 if (lightbox) {
     lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) lightbox.classList.remove('active');
+        if (e.target === lightbox) closeLightbox();
     });
 }
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox?.classList.contains('active')) closeLightbox();
+});
 
 // ── Certifications carousel ───────────────────────────────────────────────────
 const certScroll = document.getElementById('certScroll');

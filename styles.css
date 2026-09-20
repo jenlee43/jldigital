@@ -1739,11 +1739,48 @@ h1 {
     display: flex;
 }
 
-.lightbox-img {
+.lightbox-img,
+.lightbox-pdf {
     max-width: 90%;
     max-height: 90vh;
     border-radius: 0.75rem;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-pdf {
+    width: min(960px, 90vw);
+    height: 90vh;
+    border: none;
+    background: var(--white);
+}
+
+.cert-pdf-btn {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.cert-pdf-preview {
+    pointer-events: none;
+    min-height: 220px;
+    background: var(--white);
+}
+
+.cert-pdf-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    background: #f8f7fc;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(43, 30, 74, 0.08);
 }
 
 .lightbox-close {
