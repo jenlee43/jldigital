@@ -5,359 +5,297 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JL Digital ✨ Joyful Designs. Lasting Results.</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/zet4voj.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav" id="navbar">
-        <div class="nav-inner">
-            <a href="index.html" class="nav-logo"><img src="logo.png" alt="JL Digital" /></a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html#hero">Home</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Portfolio</a></li>
-                <li><a href="index.html#education">Education</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    <header class="nav" id="navbar">
+        <div class="wrap">
+            <a class="brand" href="#top" aria-label="JL Digital home">
+                <img class="logo-light" src="logo.png" alt="JL Digital logo" width="37" height="42">
+                <span>Jenniffer Lee<small>SEO · Paid Search · E-commerce</small></span>
+            </a>
+            <ul>
+                <li><a href="#projects">Case studies</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <a class="btn primary small" href="resume.pdf">Résumé ↓</a>
         </div>
-    </nav>
+    </header>
 
     <main>
-        <!-- Hero / Tagline -->
-        <section id="hero" class="hero">
-            <div class="hero-inner hero-inner--split">
-                <div class="hero-content">
-                    <div class="hero-open">
-                        <span class="hero-open-badge">
-                            <span class="hero-open-dot" aria-hidden="true"></span>
-                            Open for opportunities
-                        </span>
+        <section class="hero" id="hero">
+            <div class="wrap">
+                <div>
+                    <span class="status"><i></i>Open to full-time roles · Prince George, BC · Remote</span>
+                    <h1>I help businesses <em>grow</em> through SEO, paid advertising and social media.</h1>
+                    <p class="lede">I also build the websites that attract visitors, drive traffic and turn them into customers. 6+ years across digital marketing and e-commerce, including <strong>$390K+ in online sales</strong> from campaigns I ran.</p>
+                    <div class="ctas">
+                        <a class="btn primary" href="#projects">See my results</a>
+                        <a class="btn" href="#contact">Get in touch</a>
                     </div>
-                    <p class="hero-greeting">Hi, I'm Jenniffer</p>
-                    <h1 class="hero-headline">The heart behind <span class="hero-brand">JL Digital</span></h1>
-                   
-
-                    <div class="hero-roles">
-                        <span class="hero-role-pill hero-role-pill--purple">Ecommerce Strategist</span>
-						  
-                        <span class="hero-role-pill hero-role-pill--teal">Digital Marketer</span>
-			            <span class="hero-role-pill hero-role-pill--plum">Web Designer/Developer</span>
-                    </div>
-
-                    <p class="hero-intro">I help businesses grow through SEO, paid advertising, and social media — building websites that attract visitors, drive traffic, and engage customers.</p>
-
-                    <div class="hero-socials">
-                        <a href="https://www.linkedin.com/in/jenniffer-lee/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/jenniffer-lee/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                         </a>
-                        <a href="https://github.com/jenlee43" target="_blank" rel="noopener" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <a href="https://github.com/jenlee43" target="_blank" rel="noopener" aria-label="GitHub profile">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         </a>
+                        <span>Replies within 24 hours</span>
                     </div>
-                    <a href="https://www.linkedin.com/in/jenniffer-lee/" target="_blank" rel="noopener" class="hero-open-link">Message me on LinkedIn →</a>
                 </div>
 
-                <div class="hero-photo">
-                    <img src="images/jen profile.jpg" alt="Jenniffer Lee — JL Digital" class="hero-photo-img" />
+                <div class="stage">
+                    <div class="portrait">
+                        <img src="images/jen profile.jpg" alt="Jenniffer Lee, digital marketer" width="640" height="914" fetchpriority="high">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Progress bar divider -->
-        <div class="section-progress-divider" aria-hidden="true">
-            <div class="spd-bar"></div>
+        <div class="scan" aria-label="Quick facts">
+            <div class="wrap">
+                <div class="cell"><div class="k">Target roles</div><div class="v">Digital Marketing · E-commerce · SEO · PPC</div></div>
+                <div class="cell"><div class="k">Strongest in</div><div class="v">Organic search + Shopping ads for online stores</div></div>
+                <div class="cell"><div class="k">Work style</div><div class="v">On-site in BC, hybrid or fully remote</div></div>
+                <div class="cell"><div class="k">Also brings</div><div class="v">Web builds and design, no hand-off needed</div></div>
+            </div>
         </div>
 
-        <!-- Services (bento, plum background) -->
-        <section id="services" class="services-section services-section--plum">
-            <div class="services-plum-inner">
-                <h1 class="services-plum-title">What I Do?</h1>
-                <div class="services-bento-grid">
-                    <article class="svc-box svc-box--plum1">
-                        <h3 class="svc-box-title">eCommerce</h3>
-                        <p class="svc-box-desc">Manage Shopify stores end-to-end — theme setup, app configuration, product listing, feed optimization, and SEO-driven product pages. Run Google Shopping, Search, and Bing Ads campaigns. Drive sales with email marketing, automation workflows, audience segmentation, and A/B testing.</p>
-                    </article>
-                    <article class="svc-box svc-box--plum2">
-                        <h3 class="svc-box-title">Web & Graphic Design</h3>
-                        <p class="svc-box-desc">Design responsive websites and visual assets — from landing pages, WordPress and Shopify stores to logos, business cards, banner ads, and print-ready materials — all tailored to your brand.</p>
-                        <a href="portfolio.html#web-design" class="svc-box-link">View portfolio →</a>
-                    </article>
-                    <article class="svc-box svc-box--violet1">
-                        <h3 class="svc-box-title">SEO and AI Search</h3>
-                        <p class="svc-box-desc">Optimize a website's content through On-Page, Off-Page, and Technical SEO so its pages rank better on search engines. Also skilled in Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) to improve visibility in AI-driven search results.</p>
-                        <a href="blog-seo-semrush.html" class="svc-box-link">Read blog post →</a>
-                    </article>
-                    <article class="svc-box svc-box--violet2">
-                        <h3 class="svc-box-title">Paid Advertising</h3>
-                        <p class="svc-box-desc">Setup and manage Google and Bing shopping and search ads campaigns including the strategy, design, implementation,and analysis of ad performance.</p>
-                        <a href="blog-paid-advertising.html" class="svc-box-link">Read articles →</a>
-                    </article>
-                    <article class="svc-box svc-box--emerald">
-                        <h3 class="svc-box-title">Social Media</h3>
-                        <p class="svc-box-desc">Specialize in Facebook and YouTube channel optimization to grow audiences, increase engagement, and improve visibility through data-driven strategies, content enhancement, and ads campaign management.</p>
-                    </article>
-                    <article class="svc-box svc-box--lavender">
-                        <h3 class="svc-box-title">Keyword Research</h3>
-                        <p class="svc-box-desc">Find and analyze search terms that people enter into search engines with the goal of using that data for creating ads and search engine optimization.</p>
-                    </article>
-                    <article class="svc-box svc-box--teal">
-                        <h3 class="svc-box-title">Website & Content Management</h3>
-                        <p class="svc-box-desc">Build, maintain, and update websites using WordPress and Shopify — managing content, plugins, themes, and performance to keep your online presence running smoothly.</p>
-                    </article>
-                    <article class="svc-box svc-box--slate">
-                        <h3 class="svc-box-title">Google Business Profile</h3>
-                        <p class="svc-box-desc">Set up and optimize Google Business Profiles to boost local visibility — managing listings, reviews, posts, and insights to help customers find you in local search results.</p>
-                    </article>
-                    <article class="svc-box svc-box--indigo">
-                        <h3 class="svc-box-title">Prompt Engineering</h3>
-                        <p class="svc-box-desc">Craft and refine prompts for AI tools and large language models to generate accurate, relevant outputs — improving productivity, content creation, and workflow automation.</p>
-                    </article>
+        <section class="block" id="services">
+            <div class="wrap">
+                <div class="head">
+                    <div><div class="eyebrow">What I do</div><h2>Three pillars, one marketer.</h2></div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills -->
-        <section id="skills" class="skills-section">
-            <div class="skills-inner">
-                <h1 class="skills-title">Technical Skills</h1>
-                <nav class="skills-tabs" role="tablist">
-                    <button class="skill-tab skill-tab--active" data-skill-filter="marketing">Marketing &amp; Ads</button>
-                    <button class="skill-tab" data-skill-filter="ecommerce">eCommerce</button>
-                    <button class="skill-tab" data-skill-filter="analytics">Analytics</button>
-                    <button class="skill-tab" data-skill-filter="design">Design</button>
-                    <button class="skill-tab" data-skill-filter="dev">Dev, Hosting &amp; AI</button>
-                </nav>
-
-                <div class="skills-panel" data-skill-cat="marketing">
-                    <div class="skills-grid">
-                        <span class="skill-tag">Google Ads</span>
-                        <span class="skill-tag">Google Shopping</span>
-                        <span class="skill-tag">Microsoft Ads</span>
-                        <span class="skill-tag">SEO</span>
-                        <span class="skill-tag">Keywords Research</span>
-                        <span class="skill-tag">Digital Marketing</span>
-                        <span class="skill-tag">Content Management</span>
-                        <span class="skill-tag">YouTube Optimization</span>
-                        <span class="skill-tag">Facebook Page Optimization</span>
+                <div class="pillars">
+                    <div class="pillar">
+                        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                        <h3>Search &amp; Ads</h3>
+                        <p>SEO, AEO, GEO, Google &amp; Bing Shopping/Search ads, keyword research, and AI visibility audits.</p>
+                        <div class="chips">
+                            <span>SEO</span><span>Google Ads</span><span>Google Shopping</span><span>Microsoft Ads</span><span>Keyword Research</span><span>AEO / GEO</span><span>Google Analytics</span><span>Search Console</span><span>Tag Manager</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="skills-panel" data-skill-cat="ecommerce" style="display:none;">
-                    <div class="skills-grid">
-                        <span class="skill-tag">Shopify</span>
-                        <span class="skill-tag">WordPress</span>
-                        <span class="skill-tag">App Configuration</span>
-                        <span class="skill-tag">Theme Customization</span>
-                        <span class="skill-tag">Plugin Configuration</span>
-                        <span class="skill-tag">Google Merchant</span>
-                        <span class="skill-tag">Amazon</span>
-                        <span class="skill-tag">eBay</span>
-                        <span class="skill-tag">Poshmark</span>
-                        <span class="skill-tag">Email Marketing</span>
+                    <div class="pillar">
+                        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
+                        <h3>E-commerce</h3>
+                        <p>Shopify store management, product listings, feed optimization, email marketing, and social media growth.</p>
+                        <div class="chips">
+                            <span>Shopify</span><span>WordPress</span><span>Email Marketing</span><span>Social Media</span><span>Google Business Profile</span><span>Google Merchant</span><span>Amazon</span><span>eBay</span><span>YouTube</span><span>Facebook</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="skills-panel" data-skill-cat="analytics" style="display:none;">
-                    <div class="skills-grid">
-                        <span class="skill-tag">Google Analytics</span>
-                        <span class="skill-tag">Google Search Console</span>
-                        <span class="skill-tag">Google Tag Manager</span>
-                    </div>
-                </div>
-
-                <div class="skills-panel" data-skill-cat="design" style="display:none;">
-                    <div class="skills-grid">
-                        <span class="skill-tag">Web Design</span>
-                        <span class="skill-tag">Canva</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">Adobe Illustrator</span>
-                        <span class="skill-tag">InDesign</span>
-                        <span class="skill-tag">Animated Banner Ads</span>
-                    </div>
-                </div>
-
-                <div class="skills-panel" data-skill-cat="dev" style="display:none;">
-                    <div class="skills-grid">
-                        <span class="skill-tag">HTML &amp; CSS</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Bluehost</span>
-                        <span class="skill-tag">Vercel</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">AI (GPT, Gemini, DeepSeek, Cursor)</span>
+                    <div class="pillar">
+                        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
+                        <h3>Web &amp; Design</h3>
+                        <p>Responsive websites, landing pages, WordPress themes, branding, print materials, and prompt engineering for AI tools.</p>
+                        <div class="chips">
+                            <span>HTML &amp; CSS</span><span>Bootstrap</span><span>Web Design</span><span>Canva</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Banner Ads</span><span>AI Tools</span><span>Prompt Engineering</span><span>GitHub</span><span>Vercel</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects-section">
-            <div class="projects-inner">
-                <h1 class="projects-title">Recent Projects</h1>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <img src="images/portfolio/texasfood.jpg" alt="Texas Foods" class="project-card-img" />
-                        <h3 class="project-card-title">Texas Foods</h3>
-                        <p class="project-card-desc">Promoted website through SEO and Google Ads Shopping campaigns to increase sales.</p>
-                        <div class="project-card-links">
-                            <a href="https://docs.google.com/document/d/1Z9IE6XNXyxTAuaVUjK060N4Oscc39TA7/edit" target="_blank" rel="noopener" class="project-link-btn">Case Study</a>
-                            <a href="https://drive.google.com/drive/u/4/folders/1drza5fKCRUbnjKBqtMSQLYVuuASsCGlg" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">Analytics</a>
-                            <a href="images/Case Study/Texas_Foods_Direct_AI_Visibility_Report.pdf" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">AI Search Audit</a>
-                            <a href="https://texasfoodsdirect.com/" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">Website</a>
+
+        <section class="block" id="projects">
+            <div class="wrap">
+                <div class="head">
+                    <div><div class="eyebrow">Selected work</div><h2>The problem, what I did, what changed.</h2></div>
+                    <p>Three projects that show the range: e-commerce growth, a site built and handed over, and local SEO for a B2B firm.</p>
+                </div>
+
+                <div class="cases">
+                    <article class="case">
+                        <div class="shot"><img src="images/portfolio/texasfood.jpg" alt="Texas Foods Direct online store homepage" width="600" height="450" loading="lazy"></div>
+                        <div class="body">
+                            <div>
+                                <div class="kind">Shopify e-commerce · Google &amp; Bing Ads · SEO</div>
+                                <h3>Texas Foods Direct</h3>
+                                <p class="ctx">A specialty Texas food store shipping nationwide needed to scale online sales and get more from its ad spend. I ran every digital channel for five years.</p>
+                            </div>
+                            <div class="results">
+                                <div><b>$390K+</b><span>Total sales generated</span></div>
+                                <div><b>$83K+</b><span>Ads conversion value</span></div>
+                                <div><b>5 yrs</b><span>Managing campaigns</span></div>
+                            </div>
+                            <ul class="did">
+                                <li><strong>Listed products</strong> and optimized them for SEO to improve organic search visibility</li>
+                                <li><strong>Google Shopping</strong> (80% of spend): rebuilt Merchant Center feed titles, images and structure</li>
+                                <li><strong>Search and Bing Shopping</strong> campaigns with search-term-level bidding</li>
+                                <li><strong>Shopify email flows</strong>: abandoned cart, review requests, segmented repeat-buyer offers</li>
+                                <li><strong>Google Analytics &amp; Search Console</strong> setup, tracking configuration, and performance reporting</li>
+                                <li><strong>AI visibility audit</strong> (2026) scoring the brand's presence in ChatGPT-style answers</li>
+                            </ul>
+                            <div class="links">
+                                <a class="lead" href="https://docs.google.com/document/d/1Z9IE6XNXyxTAuaVUjK060N4Oscc39TA7/edit" target="_blank" rel="noopener">Read case study</a>
+                                <a href="https://drive.google.com/drive/u/4/folders/1drza5fKCRUbnjKBqtMSQLYVuuASsCGlg" target="_blank" rel="noopener">Ads &amp; GA4 reports</a>
+                                <a href="images/Case%20Study/Texas_Foods_Direct_AI_Visibility_Report.pdf" target="_blank" rel="noopener">AI visibility audit</a>
+                                <a href="https://texasfoodsdirect.com/" target="_blank" rel="noopener">Live site</a>
+                            </div>
                         </div>
                     </article>
-                    <article class="project-card">
-                        <img src="images/portfolio/access.jpg" alt="Access" class="project-card-img" />
-                        <h3 class="project-card-title">Access Engineering</h3>
-                        <p class="project-card-desc">Implemented on-page, off-page, and technical SEO strategies tailored for local audiences.</p>
-                        <div class="project-card-links">
-                            <a href="https://docs.google.com/document/d/1gEoCz9xj15e4F2-M3vUbOtJZMsNeaKlR/edit?usp=sharing&ouid=110618313860206169805&rtpof=true&sd=true" target="_blank" rel="noopener" class="project-link-btn">Case Study</a>
-                            <a href="https://drive.google.com/drive/u/4/folders/1hkh-aCXfCLpjfSpIy5khSV_hYj6XhtIW" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">Analytics</a>
-                            <a href="https://accesseng.ca/" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">Website</a>
+
+                    <article class="case">
+                        <div class="shot"><img src="images/portfolio/access.jpg" alt="Access Engineering website homepage" width="600" height="450" loading="lazy"></div>
+                        <div class="body">
+                            <div>
+                                <div class="kind">Engineering firm · Local SEO</div>
+                                <h3>Access Engineering</h3>
+                                <p class="ctx">A B2B engineering firm that needed to show up when local clients search for its services.</p>
+                            </div>
+                            <div class="results">
+                                <div><b class="word">Technical</b><span>Site audit and fixes</span></div>
+                                <div><b class="word">On-page</b><span>Titles, headings, service copy</span></div>
+                                <div><b class="word">Off-page</b><span>Local citations and signals</span></div>
+                            </div>
+                            <ul class="did">
+                                <li>Audited crawlability, speed and indexing, then fixed the issues found</li>
+                                <li>Rewrote service pages around the terms local buyers actually search</li>
+                                <li>Built local citations to strengthen map and organic visibility</li>
+                            </ul>
+                            <div class="links">
+                                <a class="lead" href="https://docs.google.com/document/d/1gEoCz9xj15e4F2-M3vUbOtJZMsNeaKlR/edit?usp=sharing" target="_blank" rel="noopener">Read case study</a>
+                                <a href="https://drive.google.com/drive/u/4/folders/1hkh-aCXfCLpjfSpIy5khSV_hYj6XhtIW" target="_blank" rel="noopener">Analytics</a>
+                                <a href="https://accesseng.ca/" target="_blank" rel="noopener">Live site</a>
+                            </div>
                         </div>
                     </article>
-                    <article class="project-card">
-                        <img src="images/portfolio/feastlight.png" alt="Feast Light PG" class="project-card-img" />
-                        <h3 class="project-card-title">Feast Light PG</h3>
-                        <p class="project-card-desc">A community-focused site built in Bootstrap, then converted into a custom WordPress theme — giving the client full control over their content.</p>
-                        <div class="project-card-links">
-                            <a href="case-study-feast-light-pg.html" class="project-link-btn">Case Study</a>
-                            <a href="https://feastlightpg.com/" target="_blank" rel="noopener" class="project-link-btn project-link-btn--outline">Website</a>
+
+                    <article class="case">
+                        <div class="shot shot--contain"><img src="images/portfolio/feastlight.png" alt="Feast Light Prince George website homepage" width="900" height="720" loading="lazy"></div>
+                        <div class="body">
+                            <div>
+                                <div class="kind">Community organization · Web design &amp; build · SEO</div>
+                                <h3>Feast Light Prince George</h3>
+                                <p class="ctx">Ministry news and events lived only on Facebook. The group needed one home online that volunteers could update without a developer.</p>
+                            </div>
+                            <div class="results">
+                                <div><b>Jan 2026</b><span>Launched on schedule</span></div>
+                                <div><b>100%</b><span>Responsive on every device</span></div>
+                                <div><b class="word">Self-managed</b><span>Custom WordPress theme</span></div>
+                            </div>
+                            <ul class="did">
+                                <li>Planned the structure, designed the UI and wrote the page content</li>
+                                <li>Coded it in Bootstrap, then converted it to a custom WordPress theme</li>
+                                <li>Set up Search Console, metadata and schema; fixed a title tag bug</li>
+                            </ul>
+                            <div class="links">
+                                <a class="lead" href="case-study-feast-light-pg.html">Read case study</a>
+                                <a href="https://feastlightpg.com/" target="_blank" rel="noopener">Live site</a>
+                            </div>
                         </div>
                     </article>
                 </div>
-                <a href="portfolio.html" class="projects-more">More projects</a>
             </div>
         </section>
 
-        <!-- Education -->
-        <section id="education" class="education-section">
-            <div class="education-inner">
-                <h1 class="education-title">Education</h1>
-                <div class="education-grid">
-                    <article class="edu-card">
-                        <a href="https://cnc.bc.ca/" target="_blank" rel="noopener">
-                            <img src="images/cnc-logo.jpg" alt="College of New Caledonia" class="edu-logo" />
+        <section class="block" id="more-work">
+            <div class="wrap">
+                <div class="head">
+                    <div>
+                        <div class="eyebrow">More work</div>
+                        <h2>Websites, landing pages and brand design.</h2>
+                        <a class="more" href="portfolio.html">View the full portfolio →</a>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/ricebowl.png" alt="Rice Bowl food truck website" width="800" height="640" loading="lazy"></div><div><b>Rice Bowl</b><span>Food truck website</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/kangenwater.png" alt="Kangen Water landing page" width="800" height="800" loading="lazy"></div><div><b>Kangen Water</b><span>Digital marketing</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/chessclub.png" alt="Prince George Chess Club website" width="800" height="640" loading="lazy"></div><div><b>Prince George Chess Club</b><span>Community website</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/wegd2026.png" alt="Web and Graphic Design Showcase 2026 website" width="900" height="430" loading="lazy"></div><div><b>WEGD Showcase 2026</b><span>Event website</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/homelearningideas.png" alt="Home Learning Ideas for Kids website" width="800" height="640" loading="lazy"></div><div><b>Home Learning Ideas</b><span>Website + Facebook growth</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/lailynhogan1.png" alt="Insurance advisor landing page" width="800" height="800" loading="lazy"></div><div><b>Legacy Planning</b><span>Insurance advisor site</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/branding/personal%20branding.png" alt="JL Digital brand identity mockups" width="800" height="1067" loading="lazy"></div><div><b>JL Digital Brand</b><span>Logo &amp; identity system</span></div></a>
+                    <a class="tile" href="portfolio.html"><div class="frame"><img src="images/portfolio/pinayincanada.png" alt="Pinay in Canada website" width="800" height="640" loading="lazy"></div><div><b>Pinay in Canada</b><span>YouTube channel</span></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="experience">
+            <div class="wrap">
+                <div class="head">
+                    <div><div class="eyebrow">Experience</div><h2>How I got here.</h2></div>
+                </div>
+                <div class="path">
+                    <ol class="timeline">
+                        <li><span class="when">Jan 2026–Present</span><div><h3>WordPress Developer / SEO Specialist</h3><div class="org">Feast Light PG · Remote, Prince George</div><p>Built a responsive Bootstrap site, converted it to a WordPress theme, and handle hosting, SEO, and ongoing maintenance via Bluehost.</p></div></li>
+                        <li><span class="when">Apr–Nov 2025</span><div><h3>SEO Specialist (Freelance)</h3><div class="org">Access Engineering · Remote, Prince George</div><p>Full website audit, keyword research, on-page/off-page/technical SEO, and a local landing page — tracked with GA4 &amp; Search Console.</p></div></li>
+                        <li><span class="when">Jan–Mar 2025</span><div><h3>Digital Marketing Intern</h3><div class="org">Stackd Solutions · Hybrid, Prince George</div><p>Optimized YouTube metadata for 26 videos, created animated ads and logos, wrote SEO blog content, and built product-demo presentations.</p></div></li>
+                        <li><span class="when">2018–2024</span><div><h3>Digital Marketer</h3><div class="org">Texas Foods Direct · Remote, Philippines</div><p>Managed the full Shopify store, ran SEO, Google Shopping &amp; Facebook Ads, and email automations — grew visitors 116% and boosted sales 33% in 12 months.</p></div></li>
+                    </ol>
+                    <div>
+                        <div class="label">Education</div>
+                        <a class="school" href="https://cnc.bc.ca/" target="_blank" rel="noopener">
+                            <img src="images/cnc-logo.jpg" alt="College of New Caledonia logo" width="56" height="56" loading="lazy">
+                            <div><b>Web &amp; Graphic Design Diploma</b><span>College of New Caledonia · April 2026</span></div>
                         </a>
-                        <div class="edu-info">
-                            <h3 class="edu-degree">Web and Graphic Design Diploma</h3>
-                            <p class="edu-meta">April 2026 &mdash; Prince George, Canada</p>
-                        </div>
-                    </article>
-                    <article class="edu-card">
-                        <a href="https://www.hcdc.edu.ph/" target="_blank" rel="noopener">
-                            <img src="images/holycross-logo.jpg" alt="Holy Cross of Davao College" class="edu-logo" />
+                        <a class="school" href="https://www.hcdc.edu.ph/" target="_blank" rel="noopener">
+                            <img src="images/holycross-logo.jpg" alt="Holy Cross of Davao College logo" width="56" height="56" loading="lazy">
+                            <div><b>Bachelor of Secondary Education</b><span>Holy Cross of Davao College · Davao City</span></div>
                         </a>
-                        <div class="edu-info">
-                            <h3 class="edu-degree">Bachelor of Secondary Education</h3>
-                            <p class="edu-meta">Davao City, Philippines</p>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Certifications -->
-        <section id="certifications" class="certifications-section">
-            <div class="certifications-inner">
-                <h1 class="certifications-title">Certifications</h1>
-                <div class="certifications-carousel">
-                    <button type="button" class="cert-arrow cert-arrow--prev" aria-label="Previous certification">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
-                    <div class="certifications-scroll" id="certScroll" tabindex="0" aria-label="Certifications">
-                        <div class="certifications-track">
-                    <article class="cert-card">
-                        <img src="images/certificate/shopify-content-marketing.png" alt="How to Increase Sales on Shopify with Content Marketing Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">How to Increase Sales on Shopify with Content Marketing</h3>
-                        <p class="cert-meta">Semrush Academy</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/email-marketing-cert.png" alt="HubSpot Academy Email Marketing Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">Email Marketing Certified</h3>
-                        <p class="cert-meta">HubSpot Academy</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/llm-seo-aeo-geo-certificate.jpg" alt="Udemy LLM SEO, GEO, and AEO Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">LLM SEO, GEO &amp; AEO</h3>
-                        <p class="cert-meta">Udemy &mdash; Alex Genadinik</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/Content%20Marketing%20Essentials%20for%20SEO%20and%20AI%20Search-1.png" alt="Content Marketing Essentials for SEO and AI Search Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">Content Marketing Essentials for SEO and AI Search</h3>
-                        <p class="cert-meta">Semrush Academy</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/google-ads-shopping.png" alt="Google Ads Shopping Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">Google Ads Shopping</h3>
-                        <p class="cert-meta">Google</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/Google%20Ads%20Search.png" alt="Google Ads Search Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">Google Ads Search</h3>
-                        <p class="cert-meta">Google</p>
-                    </article>
-                    <article class="cert-card">
-                        <img src="images/certificate/keyword_research_cert.png" alt="Keyword Research Essentials Certification" class="cert-img cert-img--clickable" />
-                        <h3 class="cert-title">Keyword Research Essentials</h3>
-                        <p class="cert-meta">Semrush Academy</p>
-                    </article>
-                    <article class="cert-card">
-                        <button type="button" class="cert-pdf-btn cert-img--clickable" data-pdf-src="images/certificate/How%20to%20Boost%20ecommerce%20with%20internal%20linking_cert.pdf" aria-label="How to Boost ecommerce with internal linking Certification">
-                            <object data="images/certificate/How%20to%20Boost%20ecommerce%20with%20internal%20linking_cert.pdf#toolbar=0&amp;navpanes=0" type="application/pdf" class="cert-img cert-pdf-preview" tabindex="-1" aria-hidden="true">
-                                <span class="cert-pdf-fallback">View certificate (PDF)</span>
-                            </object>
-                        </button>
-                        <h3 class="cert-title">How to Boost ecommerce with internal linking</h3>
-                        <p class="cert-meta">Semrush Academy</p>
-                    </article>
-                        </div>
-                    </div>
-                    <button type="button" class="cert-arrow cert-arrow--next" aria-label="Next certification">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
-                    </button>
+        <section class="block" id="certifications">
+            <div class="wrap">
+                <div class="head">
+                    <div><div class="eyebrow">Certifications</div><h2>Verified by Google, Semrush and HubSpot.</h2></div>
+                    <p>Select a certificate to open the full-size copy.</p>
+                </div>
+                <div class="certs">
+                    <a class="cert" href="images/certificate/Google%20Ads%20Search.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/Google%20Ads%20Search.png" alt="Google Ads Search certificate" width="600" height="464" loading="lazy"></div><div><b>Google Ads Search</b><span>Google</span></div></a>
+                    <a class="cert" href="images/certificate/google-ads-shopping.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/google-ads-shopping.png" alt="Google Ads Shopping certificate" width="600" height="464" loading="lazy"></div><div><b>Google Ads Shopping</b><span>Google</span></div></a>
+                    <a class="cert" href="images/certificate/Content%20Marketing%20Essentials%20for%20SEO%20and%20AI%20Search-1.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/Content%20Marketing%20Essentials%20for%20SEO%20and%20AI%20Search-1.png" alt="Content Marketing Essentials for SEO and AI Search certificate" width="600" height="424" loading="lazy"></div><div><b>Content Marketing for SEO &amp; AI Search</b><span>Semrush Academy</span></div></a>
+                    <a class="cert" href="images/certificate/keyword_research_cert.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/keyword_research_cert.png" alt="Keyword Research Essentials certificate" width="600" height="424" loading="lazy"></div><div><b>Keyword Research Essentials</b><span>Semrush Academy</span></div></a>
+                    <a class="cert" href="images/certificate/shopify-content-marketing.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/shopify-content-marketing.png" alt="How to Increase Sales on Shopify with Content Marketing certificate" width="600" height="424" loading="lazy"></div><div><b>Shopify Sales with Content Marketing</b><span>Semrush Academy</span></div></a>
+                    <a class="cert" href="images/certificate/llm-seo-aeo-geo-certificate.jpg" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/llm-seo-aeo-geo-certificate.jpg" alt="LLM SEO, GEO and AEO certificate" width="600" height="446" loading="lazy"></div><div><b>LLM SEO, GEO &amp; AEO</b><span>Udemy</span></div></a>
+                    <a class="cert" href="images/certificate/email-marketing-cert.png" target="_blank" rel="noopener"><div class="frame"><img src="images/certificate/email-marketing-cert.png" alt="HubSpot Email Marketing certificate" width="600" height="463" loading="lazy"></div><div><b>Email Marketing</b><span>HubSpot Academy</span></div></a>
+                    <div class="cert"><div class="frame text">Boost E-commerce with Internal Linking</div><div><b>E-commerce Internal Linking</b><span>Semrush Academy</span></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact CTA -->
-        <section id="contact" class="contact-section">
-            <div class="contact-inner">
-                <h1 class="contact-title">Let's Work Together</h1>
-                <p class="contact-text">Ready to grow your business with a site that feels like you and a strategy that works? I'd love to hear from you.</p>
-                <p class="contact-email-line">Just email <a href="mailto:jennifferlee41@gmail.com" class="contact-link">jennifferlee41@gmail.com</a> to get in touch.</p>
-                <p class="contact-reply-time">Typically replies within 24 hours</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jenniffer-lee/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </a>
-                    <a href="https://github.com/jenlee43" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
+        <section class="contact" id="contact">
+            <div class="wrap">
+                <div>
+                    <div class="eyebrow">Hiring?</div>
+                    <h2>Let's talk about your search and ads goals.</h2>
+                    <p>I usually reply within 24 hours and I'm happy to walk through any case study on a call.</p>
                 </div>
-
+                <div>
+                    <div class="mailbox">
+                        <a id="email" href="mailto:jennifferlee41@gmail.com">jennifferlee41@gmail.com</a>
+                        <button class="btn mint small" id="copy" type="button">Copy email</button>
+                    </div>
+                    <div class="row">
+                        <a class="btn ghost small" href="https://www.linkedin.com/in/jenniffer-lee/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a class="btn ghost small" href="https://github.com/jenlee43" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn ghost small" href="resume.pdf">Download résumé</a>
+                    </div>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
-        <div class="footer-inner">
-            <p class="footer-logo"><img src="logo2.png" alt="JL Digital" class="footer-logo-img" /></p>
-            <p class="footer-tagline">Joyful Designs. Lasting Results.</p>
-            <p class="footer-copy">&copy; <span id="year"></span> Jen Lee. All rights reserved.</p>
+    <footer>
+        <div class="wrap">
+            <img src="logo2.png" alt="JL Digital" width="30" height="34" loading="lazy">
+            <nav aria-label="Footer"><a href="portfolio.html">Portfolio</a><a href="#contact">Contact</a><a href="blog-seo-semrush.html">SEO &amp; Semrush</a><a href="blog-google-search-ads.html">Google Search Ads</a><a href="blog-google-shopping.html">Google Shopping</a></nav>
+            <span>&copy; <span id="year">2026</span> Jenniffer Lee · Prince George, BC</span>
         </div>
     </footer>
 
     <!-- Lightbox modal -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" id="lightboxClose">&times;</button>
-        <img class="lightbox-img" id="lightboxImg" src="" alt="" hidden />
-        <iframe class="lightbox-pdf" id="lightboxPdf" src="" title="" hidden></iframe>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
     </div>
 
     <script src="script.js"></script>
