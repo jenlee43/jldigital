@@ -336,11 +336,21 @@ h1 {
     transition: transform 0.4s ease;
 }
 .case:hover .shot img { transform: scale(1.04); }
+.case .shot--contain {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 .case .shot--contain img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: auto;
     object-fit: contain;
-    object-position: center center;
+    object-position: top center;
     padding: 12px;
 }
+.case:hover .shot--contain img { transform: scale(1.02); }
 
 .case .body {
     padding: clamp(22px, 3vw, 34px); min-width: 0;
@@ -412,6 +422,7 @@ h1 {
     .case, .case:nth-child(even) { grid-template-columns: 1fr; }
     .case:nth-child(even) .shot { order: 0; }
     .case .shot img { aspect-ratio: 16 / 10; }
+    .case .shot--contain img { aspect-ratio: auto; height: auto; }
 }
 @media (max-width: 480px) {
     .results { grid-template-columns: 1fr; }
